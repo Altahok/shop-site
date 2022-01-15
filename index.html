@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем скрипт -->
+    <script src="script.js"></script>
+
+    <link rel="icon" href="img/futbolka.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Source+Serif+Pro:wght@200&family=Spectral+SC:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Магазин футболок</title>
+</head>
+
+<body>
+    <!-- Шапка страницы -->
+    <header>
+        <div class="header-text">
+            <span class="header-wrapper">ФУТБОЛКИ С ПРИНТАМИ</span><br>
+            <span class="price">499<sup>руб</sup></span><br>
+            <span class="price-text">ПОЧЕМУ ТАК ДЁШЕВО?</span>
+        </div>
+        <div class="header-image-section">
+
+            <figure>
+                <img src="img/price2.png" alt="" class="img-sale" height="90">
+                <figcaption>Низкие цены</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/gruzovchok.png" alt="" height="90">
+                <figcaption>Доставка по всей россии</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/hit2.png" alt="" height="80">
+                <figcaption>Только хиты</figcaption>
+            </figure>
+
+        </div>
+    </header>
+    <!-- Основная часть -->
+    <main>
+        <div class="main-text">
+            <h2>ФУТБОЛКИ</h2>
+            <span>100% хлопок</span>
+        </div>
+
+        <div class="main-items">
+            <div class="main-item">
+                <img src="img/pexels-mart-3..jpg" alt="" height="350"><br>
+                <div class="item-name" >Футболка</div><br>
+                <span class="item-price">499 руб</span><br>
+                <button onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">Добавить в заказ</button>
+            </div>
+            <div class="main-item">
+                <img src="img/pexels-monstera-1.jpg" alt="" height="350"><br>
+                <div class="item-name">Футболка</div><br>
+                <span class="item-price">499 руб</span><br>
+                <button onclick="prompt('Введите ваше имя')">Добавить в заказ</button>
+            </div>
+            <div class="main-item">
+                <img src="img/pexels-mart-1.jpg" alt="" height="350"><br>
+                <div class="item-name">Футболка</div><br>
+                <span class="item-price">499 руб</span><br>
+                <button onmouseover="alert('43 размер')">Добавить в заказ</button>
+            </div>
+        </div>
+
+        <div class="main-items">
+            <div class="main-item">
+                <img src="img/pexels-mart-2.jpg" alt="" height="350"><br>
+                <div class="item-name">Футболка</div><br>
+                <span class="item-price">499 руб</span><br>
+                <button onclick="alert ('Добавили в заказ: \nФутболка Белая Мужская')">Добавить в заказ</button>
+            </div>
+            <div class="main-item">
+                <img src="img/pexels-monstera-2.jpg" alt="" height="350"><br>
+                <div class="item-name">Футболка</div><br>
+                <span class="item-price">499 руб</span><br>
+                <button onclick="print_contact()">Добавить в заказ</button>
+            </div>
+            <div class="main-item">
+                <img src="img/pexels-monstera-3.jpg" alt="" height="350"><br>
+                <div class="item-name">Футболка</div><br>
+                <span class="item-price">499 руб</span><br>
+                <button>Добавить в заказ</button>
+            </div>
+        </div>
+
+    </main>
+    <!-- Секция купон -->
+    <section class="cupon">
+
+        <div class="cupon-text">
+            <span>
+                РОЗЫГРЫШ<br>
+                10 000 <sup>руб.</sup>
+            </span><br>
+            <span class="cupon-akcent">
+                СРЕДИ ОБЛАДАТЕЛЕЙ<br>
+                КУПОНОВ
+            </span><br>
+            <span>10 января на нашем ютуб канале в прямом эфире мы проведём розыгрыш призов!</span>
+        </div>
+
+        <div class="cupon-img">
+            <img src="img/gifts.png" alt="" width="400" height="200">
+        </div>
+
+    </section>
+
+    <section class="order">
+        <h2>
+            Ваш Заказ
+        </h2>
+        <div class="order-akcent-text">
+            Корзина пуста
+        </div>
+        <span>В корзине пусто!</span>
+    </section>
+
+    <section class="form-order">
+        <form action="">
+            <h3>Оформление заказа</h3>
+            <label for="fname">Имя</label><br>
+            <input type="text" id="fname" name="fame" placeholder="Имя" required><br>
+
+            <label for="lname">Фамилия</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Фамилия" required><br>
+
+            <label for="email">Электронная почта</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+
+            <label for="phone">Номер Телефона</label><br>
+            <input type="text" id="phone" name="phone" placeholder="Номер телефона" required>
+
+            <div class="pay-order">
+                <span>Оплата онлайн</span>
+                <hr>
+                <button type="submit" class="button-pay">Перейти к оплате</button>
+            </div>
+        </form>
+    </section>
+
+
+
+
+    <!-- Техподдержка -->
+    <section>
+      <img onclick="print_contact()" class="helper" src="img/tp.png" alt="" width="100">
+    </section>
+
+
+    <!-- Виджет подарок -->
+    <section>
+      <img onclick="ThePresent()" class="podarok" src="img/podarok.png" alt="" height="100">
+    </section>
+
+</body>
+
+</html>
