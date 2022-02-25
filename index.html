@@ -5,21 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-    <!-- Подключаем скрипт -->
-    <script src="script.js"></script>
-
-    <link rel="icon" href="img/futbolka.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Подключаем шрифты -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Source+Serif+Pro:wght@200&family=Spectral+SC:wght@200&display=swap"
         rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Подключаем Animate.css через CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Подключаем файл CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Подключаем WOW скрипт  -->
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Иконка сайта -->
+    <link rel="icon" href="img/futbolka.png">
+
+    <!-- Заголовок -->
     <title>Магазин футболок</title>
+
 </head>
 
+
+
 <body>
+
+
+
     <!-- Шапка страницы -->
     <header>
         <div class="header-text">
@@ -53,47 +78,89 @@
             <span>100% хлопок</span>
         </div>
 
-        <div class="main-items">
-            <div class="main-item">
-                <img src="img/pexels-mart-3..jpg" alt="" height="350"><br>
-                <div class="item-name" >Футболка</div><br>
-                <span class="item-price">499 руб</span><br>
-                <button onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">Добавить в заказ</button>
-            </div>
-            <div class="main-item">
-                <img src="img/pexels-monstera-1.jpg" alt="" height="350"><br>
-                <div class="item-name">Футболка</div><br>
-                <span class="item-price">499 руб</span><br>
-                <button onclick="prompt('Введите ваше имя')">Добавить в заказ</button>
-            </div>
-            <div class="main-item">
-                <img src="img/pexels-mart-1.jpg" alt="" height="350"><br>
-                <div class="item-name">Футболка</div><br>
-                <span class="item-price">499 руб</span><br>
-                <button onmouseover="alert('43 размер')">Добавить в заказ</button>
-            </div>
-        </div>
+        <section class="main-products">
+            <div class="main-items">
 
-        <div class="main-items">
-            <div class="main-item">
-                <img src="img/pexels-mart-2.jpg" alt="" height="350"><br>
-                <div class="item-name">Футболка</div><br>
-                <span class="item-price">499 руб</span><br>
-                <button onclick="alert ('Добавили в заказ: \nФутболка Белая Мужская')">Добавить в заказ</button>
+                <div class="arrow">
+                    <img src="img/left.PNG" width="50" onclick="rand_tshirt()" alt="">
+                </div>
+
+                <div class="main-item">
+                    <img src="img/pexels-mart-3..jpg" alt="" height="450">
+                    <span class="item-price">499 руб</span> <span class="item-price-slashed">610 руб</span>
+                    <div class="item-name">Чёрная футболка, Женская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
+                <div class="main-item">
+                    <img src="img/pexels-monstera-1.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span>
+                    <div class="item-name">Белая футболка, Мужская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
+
+                <div class="arrow">
+                    <img src="img/right.PNG" width="50" onclick="rand_tshirt()" alt="">
+                </div>
+
+                <!-- <div class="main-item">
+                    <img src="img/pexels-mart-1.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span> <span class="item-price-slashed">820 руб</span>
+                    <div class="item-name">Розовая футболка, Мужская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div> -->
             </div>
-            <div class="main-item">
-                <img src="img/pexels-monstera-2.jpg" alt="" height="350"><br>
-                <div class="item-name">Футболка</div><br>
-                <span class="item-price">499 руб</span><br>
-                <button onclick="print_contact()">Добавить в заказ</button>
+
+            <div class="main-items">
+                <div class="main-item">
+                    <img src="img/pexels-mart-2.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span>
+                    <div class="item-name">Белая футболка, Мужская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
+                <div class="main-item">
+                    <img src="img/pexels-monstera-2.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span> <span class="item-price-slashed">700 руб</span>
+                    <div class="item-name">Тёмно-персиковая футболка, Женская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
+                <div class="main-item">
+                    <img src="img/pexels-monstera-3.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span>
+                    <div class="item-name">Белая футболка, Женская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
             </div>
-            <div class="main-item">
-                <img src="img/pexels-monstera-3.jpg" alt="" height="350"><br>
-                <div class="item-name">Футболка</div><br>
-                <span class="item-price">499 руб</span><br>
-                <button>Добавить в заказ</button>
+
+            <div class="main-items">
+                <div class="main-item">
+                    <img src="img/pexels-monstera-1.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span> <span class="item-price-slashed">700 руб</span>
+                    <div class="item-name">Белая футболка, Мужская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
+                <div class="main-item">
+                    <img src="img/pexels-mart-1.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span> <span class="item-price-slashed">750 руб</span>
+                    <div class="item-name">Розовая футболка, Мужская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
+                <div class="main-item">
+                    <img src="img/pexels-mart-2.jpg" alt="" height="450"><br>
+                    <span class="item-price">499 руб</span>
+                    <div class="item-name">Белая футболка, Мужская, состав: 100% хлопок</div>
+                    <button class="main-item-btn" onclick="alert ('Добавили в заказ: \nФутболка Черная Женская')">В
+                        корзину</button>
+                </div>
             </div>
-        </div>
+        </section>
 
     </main>
     <!-- Секция купон -->
@@ -155,14 +222,34 @@
 
     <!-- Техподдержка -->
     <section>
-      <img onclick="print_contact()" class="helper" src="img/tp.png" alt="" width="100">
+        <img onclick="print_contact()" class="helper wow animate__animated animate__headShake" src="img/tp.png" alt=""
+            width="75">
     </section>
 
 
     <!-- Виджет подарок -->
     <section>
-      <img onclick="ThePresent()" class="podarok" src="img/podarok.png" alt="" height="100">
+        <img id="gift-btn" style="opacity: 0;" class="podarok wow animate__animated animate__shakeX"
+            src="img/podarok.png" alt="" height="100">
     </section>
+
+    <!-- Модальное окно подарка -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h1>Получите скидку в 35%!</h1>
+            <p class="present-txt">Введите имя друга рассказавшего вам о нашем магазине и вы с ним ПОЛУЧИТЕ СКИДКУ в 35%
+                на покупку из любой категории товаров на нашем сайте!</p>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Имя.." required>
+            <button id="btnPresent" class="present-btn">получить скидку</button>
+        </div>
+    </div>
+
+
+    <!-- Подключаем файл скрипт -->
+    <script src="script.js"></script>
+
 
 </body>
 
